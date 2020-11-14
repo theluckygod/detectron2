@@ -168,5 +168,5 @@ def get(config_path, trained: bool = False, device: Optional[str] = None):
         cfg.MODEL.DEVICE = "cpu"
 
     model = build_model(cfg)
-    DetectionCheckpointer(model).load(cfg.MODEL.WEIGHTS)
+    #DetectionCheckpointer(model).load(cfg.MODEL.WEIGHTS)
     return model
